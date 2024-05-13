@@ -1,0 +1,105 @@
+.navbar{
+    height: 100px;
+    width: 100%;
+    /* background-color: gray; */
+    margin: 0;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    color: #e5e5e5;
+    background-image: linear-gradient(180deg, rgba(78, 76, 76, 0.399) 10%, transparent);
+    z-index: 1;
+    transition: all .5s;
+}
+.darkNav{
+    height: 100px;
+    width: 100%;
+    /* background-color: gray; */
+    margin: 0;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    color: #e5e5e5;
+    background-image: linear-gradient(180deg, rgba(9, 9, 9, 0.399) 10%, transparent);
+    z-index: 1;
+    transition: all .5s;
+}
+.leftNav{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 0;
+}
+.leftNav .logo{
+    background: transparent;
+    width: 120px;
+    
+}
+.leftNav p{
+    font-size: 2rem;
+    color: #CE4D26;
+    font-weight: 700;
+    background: linear-gradient(to right,#D14B25, #CE4D26, #B13825,#b8332e);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    padding: 0;
+    margin: 0;
+}
+.leftNav p span {
+    color: #952825;
+}
+.rightNav{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    padding: 0 30px;
+}
+.rightNav .lightBtn{
+    width: 20%;
+    height: 40px;
+    border-radius: 10px;
+    border: 2px  solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    outline: 0;
+    background: transparent;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 520;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 15px;
+}
+.star{
+    width: 40px;
+    color: red;
+    padding: 0;
+    margin: 0;
+}
+.rightNav .darkBtn{
+    width: 20%;
+    height: 40px;
+    border-radius: 10px;
+    border: 2px  solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    outline: 0;
+    background: transparent;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 520;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 15px;
+}
