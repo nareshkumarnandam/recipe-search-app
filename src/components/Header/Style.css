@@ -45,7 +45,7 @@
     background: linear-gradient(
         180deg,
         rgba(34, 34, 34, 0) 0%,
-        #000000 79.17%
+        #1F1F1F 79.17%
     );
     position: absolute;
     bottom: 110px;
@@ -76,8 +76,4 @@
     border: 1px solid rgba(255,255,255,0.1);
     backdrop-filter: blur(30px);
     color: rgba(255,255,255,0.8);
-}
-.mainContent{
-    position: relative;
-    top: 50px;
 }

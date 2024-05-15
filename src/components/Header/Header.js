@@ -1,11 +1,19 @@
 import React, { useState, useEffect } from "react";
 import "./Style.css";
 import ItemCard from "../ItemCards/ItemCard";
+import { fetchData } from "../../service";
 
-const Header = ({darkMode, setDarkMode}) => {
-  const [searchInput, setSearchInput] = useState("");
+const Header = ({darkMode, setDarkMode, searchInput, setSearchInput}) => {
+  
   const [searchQuery, setSearchQuery] = useState("");
-
+  const [data, setData] = useState('');
+  useEffect(() => {
+    fetchData(searchInput).then((response) => {
+        setData(response);
+        console.log(response);
+    })
+  },[])
+console.log(searchInput);
 //   console.log(searchQuery);
 
   return (
@@ -30,10 +38,6 @@ const Header = ({darkMode, setDarkMode}) => {
         </div>
       </div>
       <div className={darkMode? "opacity-layer" : "opacity-layer-light"  }></div>
-      <div className="mainContent">
-        <h1>Recipes Tailored Just for You!</h1>
-
-      </div>
     </>
   );
 };

@@ -1,6 +1,10 @@
-.popular{
+.mainContent{
     position: relative;
-    top: 100px;
+    top: 50px;
+}
+.popular ,.categoryDisplay{
+    /* position: relative;
+    top: 10px; */
     font-size: 1.2rem;
     display: flex;
     flex-wrap: wrap;
@@ -99,4 +103,24 @@
     border: none;
     outline: none;
     cursor: pointer;
+}
+.mostLiked{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    gap: 50px;
+    padding: 2rem;
+}
+.mostLiked svg{
+    margin: 50px;
+    cursor: pointer;
+    transition: all .2s;
+}
+.mostLiked svg:hover{
+    color: rgba(233, 29, 29, 0.768);
+}
+.mostLiked svg:active{
+    color: rgba(233, 29, 29, 0.768);
 }
