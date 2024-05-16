@@ -7,7 +7,8 @@ import { fetchData } from "../../service";
 import { FaPizzaSlice } from "react-icons/fa6";
 import { GiNoodles } from "react-icons/gi";
 import { GiChickenOven } from "react-icons/gi";
-import { constants } from "buffer";
+import { LuDessert } from "react-icons/lu";
+import loading from '../../assets/loading.gif';
 
 const Popular = ({ darkMode, setDarkMode, searchInput, setSearchInput }) => {
   const [popular, setPopular] = useState([]);
@@ -16,15 +17,40 @@ const Popular = ({ darkMode, setDarkMode, searchInput, setSearchInput }) => {
   const [categoryData, setCategoryData] = useState("")
   const [data, setData] = useState("");
   const [categoryColor, setCategoryColor] = useState("rgba(233, 29, 29, 0.768)");
+  const [isLoading, setIsLoading] = useState(false);
+  const [popularLoading, setPopularLoading] = useState(false);
+
 
   
   const navigate = useNavigate();
   const location = useLocation();
 
+  useEffect(() => {
+    const storedCategory = localStorage.getItem("selectedCategory");
+    if (storedCategory) {
+      setCategory(storedCategory);
+    }
+  }, []);
+
   const handleMostLikedClick = (selectedCategory) => {
     setCategory(selectedCategory);
-    
+    setIsLoading(true);
+    localStorage.setItem("selectedCategory", selectedCategory);
+    // const selectedPizza = document.getElementsByClassName('pizza');
+    // const selectedPasta = document.getElementsByClassName('pasta');
+    // if(category === 'pizza'){
+    //     selectedPizza.style.color = categoryColor;
+    // }else if(category === 'pasta'){
+    //     selectedPasta.style.color = categoryColor;
+    // }
   };
+//   useEffect(()=>{
+//     if(searchInput){
+//         fetchData(searchInput).then((response) => {
+
+//         })
+//     }
+//   })
 
 
   useEffect(() => {
@@ -32,6 +58,7 @@ const Popular = ({ darkMode, setDarkMode, searchInput, setSearchInput }) => {
         console.log(category);
         fetchData(category).then((response) => {
             setCategoryData(response);
+            setIsLoading(false);
           console.log(response);
         });
       }
@@ -40,11 +67,13 @@ const Popular = ({ darkMode, setDarkMode, searchInput, setSearchInput }) => {
   useEffect(() => {
     fetchData(query).then((response) => {
       setData(response);
+      setPopularLoading(false);
     //   console.log(response);
     });
   }, []);
 
   useEffect(() => {
+    setPopularLoading(true);
     window.scrollTo(0, 0);
   }, [location]);
 
@@ -70,10 +99,17 @@ const Popular = ({ darkMode, setDarkMode, searchInput, setSearchInput }) => {
     <div className="mainContent">
       <h1>Recipes Tailored Just for You!</h1>
       <div className="mostLiked">
-        <FaPizzaSlice onClick={() => handleMostLikedClick('pizza')} />
-        <GiNoodles onClick={() => handleMostLikedClick('pasta')} />
-        <GiChickenOven onClick={() => handleMostLikedClick('chicken')} />
+        <FaPizzaSlice style={{ color: category === 'pizza' ? categoryColor : '' }} className="pizza" onClick={() => handleMostLikedClick('pizza')} />
+        <GiNoodles style={{ color: category === 'pasta' ? categoryColor : '' }} className="pasta" onClick={() => handleMostLikedClick('pasta')} />
+        <GiChickenOven style={{ color: category === 'chicken' ? categoryColor : '' }} className="chicken" onClick={() => handleMostLikedClick('chicken')} />
+        <LuDessert  style={{ color: category === 'dessert' ? categoryColor : '' }} className="dessert" onClick={() => handleMostLikedClick('dessert')} />
+        
       </div>
+      {isLoading && (
+        <div className="loadingCategories">
+          <img src={loading} alt="Loading" />
+        </div>
+      )}
       <div className="categoryDisplay">
         {
             categoryData && categoryData.hits.map((item, idx) => {
@@ -109,6 +145,11 @@ const Popular = ({ darkMode, setDarkMode, searchInput, setSearchInput }) => {
             })
         }
       </div>
+      {popularLoading && (
+        <div className="loadingCategories">
+          <img src={loading} alt="Loading" />
+        </div>
+      )}
       <div className="popularDishes">
         <h1>Popular</h1>
         <div className="popular">

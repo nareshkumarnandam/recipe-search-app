@@ -29,7 +29,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
     };
   }, []);
 
-  const glassEffect = scrollPosition > 120;
+  const glassEffect = scrollPosition > 80;
 
   const modeSwitcher = () => {
     if (darkMode === false) {

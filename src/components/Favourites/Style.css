@@ -1,0 +1,70 @@
+.favouritePage{
+    position: relative;
+    top: 100px;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
+.favItem{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 2rem;
+    list-style: none;
+}
+.favItem img{
+    align-self: center;
+    width: 70%;
+    margin: 0 4.2rem;
+}
+.cuisineList{
+    list-style: none;
+}
+.optionsColumn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.optionsColumn a{
+    color: rgb(166, 166, 166);
+    text-decoration: none;
+    transition: all .2s;
+}
+.optionsColumn a:hover{
+    color: rgba(233, 29, 29, 0.768);
+}
+.optionsColumn button{
+    width: 60%;
+    padding: 1rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(210, 179, 42);
+    border: none;
+    outline: none;
+    border-radius: 10px;
+}
+
+.noFavDiv{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.noFavDiv svg{
+    font-size: 4rem;
+    opacity: .5;
+}
+.noFavDiv p{
+    font-size: 1.2rem;
+}
