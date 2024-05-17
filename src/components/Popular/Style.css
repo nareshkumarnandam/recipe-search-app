@@ -1,138 +1,246 @@
-.mainContent{
+.mainContent {
+  position: relative;
+  top: 50px;
+  width: 100vw;
+}
+.popular,
+.categoryDisplay {
+  /* position: relative;
+    top: 10px; */
+  font-size: 1.2rem;
+  display: flex;
+  gap: 10px;
+  overflow-x: scroll;
+  padding: 20px;
+}
+.popular::-webkit-scrollbar,
+.categoryDisplay::-webkit-scrollbar {
+  display: none;
+}
+.popularCard {
+  width: 300px;
+  height: 350px;
+  object-fit: cover;
+  background-color: rgb(40, 40, 40);
+  padding: 10px;
+  border-radius: 10px;
+}
+.popularCardlight:hover {
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+.popularCard:hover {
+  box-shadow: rgba(147, 147, 147, 0.725) 0px 25px 20px -20px;
+}
+.popularCardlight {
+  width: 300px;
+  height: 350px;
+  object-fit: cover;
+  background-color: rgb(225, 225, 225);
+  padding: 10px;
+  border-radius: 10px;
+}
+.popularCard img,
+.popularCardlight img {
+  width: 280px;
+  height: 180px;
+  border-radius: 10px;
+  object-fit: cover;
+  object-position: center;
+}
+.recipeTitle {
+  font-size: 1rem;
+  margin: 10px 0;
+  text-align: center;
+  height: 10%;
+}
+.extraInfo {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+  position: relative;
+  top: 20px;
+}
+.veg {
+  font-size: 1rem;
+  color: green;
+  margin: 5px;
+  position: relative;
+  top: 2px;
+}
+.nonVeg {
+  font-size: 1rem;
+  color: red;
+  margin: 5px;
+  position: relative;
+  top: 2px;
+}
+.favBtn,
+.favBtndark {
+  width: 100%;
+  height: 100%;
+  margin: 10px 0;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  transition: all 0.2s;
+}
+.favBtndark {
+  background-color: rgba(54, 54, 54, 0.705);
+  color: white;
+}
+.favBtn:hover,
+.favBtndark:hover {
+  font-size: 1.02rem;
+}
+.favStar {
+  position: absolute;
+  /* left: 30%; */
+  width: 40px;
+  height: 40px;
+  font-size: 1.8rem;
+  background: transparent;
+  color: red;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.mostLiked {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  gap: 20px;
+  padding: 2rem;
+}
+.mostLiked svg {
+  margin: 50px;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 3rem;
+}
+.mostLiked svg:hover {
+  color: rgba(233, 29, 29, 0.768);
+}
+.mostLiked svg:active {
+  color: rgba(233, 29, 29, 0.768);
+}
+.loadingCategories {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loadingCategories img {
+  transition: all 0.1s;
+  width: 6rem;
+}
+
+@media (max-width: 500px) {
+  .mainContent {
     position: relative;
     top: 50px;
-}
-.popular ,.categoryDisplay{
+  }
+  .mainContent h1 {
+    font-size: 1.2rem;
+  }
+  .popular,
+  .categoryDisplay {
     /* position: relative;
-    top: 10px; */
+        top: 10px; */
     font-size: 1.2rem;
     display: flex;
-    flex-wrap: wrap;
-    width: 99vw;
-    justify-content: center;
-    /* align-items: center; */
-    gap: 20px;
-    padding: 20px;
-}
-.popularCard{
+    gap: 10px;
+    overflow-x: scroll;
+    padding: 10px;
+  }
+  .popularCard {
+    display: inline-block;
     width: 300px;
     height: 350px;
     object-fit: cover;
     background-color: rgb(40, 40, 40);
     padding: 10px;
     border-radius: 10px;
-}
-.popularCardlight:hover{
+    flex-shrink: 0;
+  }
+  .popularCardlight:hover {
     box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
-}
-.popularCard:hover{
+  }
+  .popularCard:hover {
     box-shadow: rgba(147, 147, 147, 0.725) 0px 25px 20px -20px;
-}
-.popularCardlight{
+  }
+  .popularCardlight {
     width: 300px;
     height: 350px;
     object-fit: cover;
     background-color: rgb(225, 225, 225);
     padding: 10px;
     border-radius: 10px;
-}
-.popularCard img , .popularCardlight img{
+  }
+  .popularCard img,
+  .popularCardlight img {
     width: 280px;
     height: 180px;
     border-radius: 10px;
     object-fit: cover;
     object-position: center;
-}
-.recipeTitle{
+  }
+  .recipeTitle {
     font-size: 1rem;
     margin: 10px 0;
     text-align: center;
     height: 10%;
-}
-.extraInfo{
+  }
+  .extraInfo {
     width: 100%;
     height: 20%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: .8rem;
+    font-size: 0.8rem;
     position: relative;
     top: 20px;
-}
-.veg{
-    font-size: 1rem;
-    color: green;
-    margin: 5px;
-    position: relative;
-    top: 2px;
-}
-.nonVeg{
-    font-size: 1rem;
-    color: red;
-    margin: 5px;
-    position: relative;
-    top: 2px;
-}
-.favBtn, .favBtndark{
-    width: 100%;
-    height: 100%;
-    margin: 10px 0;
-    border-radius: 10px;
-    cursor: pointer;
-    border: none;
-    outline: none;
-    font-size: 1rem;
-    transition: all .2s;
-}
-.favBtndark{
-    background-color: rgba(54, 54, 54, 0.705);
-    color: white;
-}
-.favBtn:hover, .favBtndark:hover{
-    font-size: 1.02rem;
-}
-.favStar{
-    position: absolute;
-    /* left: 30%; */
-    width: 40px;
-    height: 40px;
-    font-size: 1.8rem;
-    background: transparent;
-    color: red;
-    border: none;
-    outline: none;
-    cursor: pointer;
-}
-.mostLiked{
+  }
+
+  .mostLiked {
     display: flex;
     width: 100%;
     justify-content: center;
     align-items: center;
     font-size: 4rem;
-    gap: 20px;
+    gap: 40px;
     padding: 2rem;
-}
-.mostLiked svg{
-    margin: 50px;
+  }
+  .mostLiked svg {
+    margin: 0px;
     cursor: pointer;
-    transition: all .2s;
-    font-size: 3rem;
-}
-.mostLiked svg:hover{
+    transition: all 0.2s;
+    font-size: 2rem;
+  }
+  .mostLiked svg:hover {
     color: rgba(233, 29, 29, 0.768);
-}
-.mostLiked svg:active{
+  }
+  .mostLiked svg:active {
     color: rgba(233, 29, 29, 0.768);
-}
-.loadingCategories{
+  }
+  .loadingCategories {
     width: 100%;
     height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.loadingCategories img{
-    transition: all .1s;
+  }
+  .loadingCategories img {
+    transition: all 0.1s;
     width: 6rem;
+  }
 }

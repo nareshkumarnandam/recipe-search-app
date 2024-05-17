@@ -92,3 +92,105 @@
     outline: none;
     border-radius: 10px;
 }
+
+@media (max-width: 500px){
+    .ItemCardMain{
+        width: 100%;
+        padding: 4rem 1rem;
+        position: relative;
+        top: 0px;
+    }
+    .ItemCard{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem 1rem;
+        /* margin: 2rem; */
+        width: 100%;
+        gap: 10px;
+        /* border: 3px solid rgb(58, 58, 58);
+        border-radius: 10px; */
+       
+    }
+    h1{
+        text-align: center;
+    }
+    .leftDiv{
+        width: 100%;
+        padding: 1rem;
+    }
+    .rightDiv{
+        width: 100%;
+        position: relative;
+        padding: 10px;
+        /* top: 150px; */
+    }
+    .rightDivDetails{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .leftDiv .dishPhoto{
+        border-radius: 10px;
+        box-shadow: rgba(156, 155, 155, 0.6) 0px 2px 4px 0px, rgba(112, 112, 112, 0.523) 0px 2px 16px 0px;
+        width: 100%;
+    }
+    .recipeDetails{
+        width: 100%;
+        /* text-align: left; */
+        padding: 0rem;
+        position: relative;
+        top: -10px;
+    }
+    .cuisineType{
+        text-transform: capitalize;
+        opacity: .6;
+    }
+    .dietLabelsList{
+        text-transform: capitalize;
+        opacity: .6;
+    }
+    
+    .recipeDetails p{
+        margin-top: 1rem;
+    }
+    .recipeDetails p ul {
+        text-transform: capitalize;
+        padding: 0rem;
+        text-align: left;
+        line-height: 1.8rem;
+        text-decoration: none;
+        /* list-style: none; */
+    }
+    .loading{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .loading img{
+        transition: all .1s;
+        width: 7rem;
+    }
+    .moreDetailsLink{
+        color: rgb(166, 166, 166);
+        text-decoration: none;
+        transition: all .2s;
+    }
+    .moreDetailsLink:hover{
+        color: rgba(233, 29, 29, 0.768);
+    }
+    .addToFavBtn{
+        width: 100%;
+        padding: .8rem;
+        font-size: 1.2rem;
+        cursor: pointer;
+        color: white;
+        background-color: rgb(210, 179, 42);
+        border: none;
+        outline: none;
+        border-radius: 10px;
+        margin: 10px;
+    }
+}

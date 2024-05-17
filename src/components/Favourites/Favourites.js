@@ -30,7 +30,7 @@ const Favourites = ({ favouritesList, setFavouritesList }) => {
           return (
             <div key={idx} className="favItem">
               <img src={favRecipe.image} />
-              <div>
+              <div className="list">
                 <h3>{favRecipe.label}</h3>
                 <br />
                 <br />

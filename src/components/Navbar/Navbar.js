@@ -73,6 +73,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
             textAlign: "center",
             color: "white",
           }}
+          id="modeBtn"
           className={buttonTheme}
           onClick={modeSwitcher}
         >

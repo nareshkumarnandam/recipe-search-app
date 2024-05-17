@@ -116,3 +116,133 @@
     align-items: center;
     padding-left: 15px;
 }
+
+
+@media (max-width: 500px) {
+    .navbar{
+        height: 50px;
+        width: 100%;
+        /* background-color: gray; */
+        margin: 0;
+        padding: 10px 5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        color: #e5e5e5;
+        background-image: linear-gradient(180deg, rgba(78, 76, 76, 0.399) 10%, transparent);
+        z-index: 1;
+        transition: all .5s;
+        /* backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
+      -webkit-backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%); */
+    }
+    .darkNav{
+        height: 50px;
+        width: 100%;
+        /* background-color: gray; */
+        margin: 0;
+        padding: 10px 5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        color: #e5e5e5;
+        background-image: linear-gradient(180deg, rgba(9, 9, 9, 0.399) 10%, transparent);
+        z-index: 1;
+        transition: all .5s;
+        /* backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
+      -webkit-backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%); */
+    }
+    .glassEffect {
+        backdrop-filter: saturate(180%) blur(20px);
+        background-color: rgba(255, 255, 255, 0.15);
+        -webkit-backdrop-filter: saturate(180%) blur(20px);
+        border-radius: 1rem;
+      }
+    .leftNav{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 10px 0;
+    }
+    .leftNav .logo{
+        background: transparent;
+        width: 50px;
+        cursor: pointer;
+    }
+    .leftNav p{
+        font-size: 1rem;
+        color: #CE4D26;
+        font-weight: 700;
+        background: linear-gradient(to right,#D14B25, #CE4D26, #B13825,#b8332e);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        padding: 0;
+        margin: 0;
+        position: relative;
+        left: -5px;
+        cursor: pointer;
+    }
+    .leftNav p span {
+        color: #952825;
+    }
+    .rightNav{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 5px;
+        padding: 0 10px;
+    }
+    .rightNav .lightBtn{
+        width: 80%;
+        height: 25px;
+        border-radius: 8px;
+        border: 2px  solid rgb(255, 255, 255);
+        color: rgb(255, 255, 255);
+        outline: 0;
+        background: transparent;
+        cursor: pointer;
+        font-size: .6rem;
+        font-weight: 520;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 5px;
+    }
+    .star{
+        width: 20px;
+        color: red;
+        padding: 0;
+        margin: 0;
+    }
+    .rightNav .darkBtn{
+        width: 80%;
+        height: 25px;
+        border-radius: 8px;
+        border: 2px  solid rgb(255, 255, 255);
+        color: rgb(255, 255, 255);
+        outline: 0;
+        background: transparent;
+        cursor: pointer;
+        font-size: .6rem;
+        font-weight: 520;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 5px;
+    }
+    #modeBtn {
+        width: 20%;
+        font-size: 1rem;
+    }
+    #modeBtn svg{
+        width: 100%;
+        font-size: 1rem;
+    }
+}
