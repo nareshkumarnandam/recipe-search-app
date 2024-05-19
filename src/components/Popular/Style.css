@@ -15,7 +15,19 @@
 }
 .popular::-webkit-scrollbar,
 .categoryDisplay::-webkit-scrollbar {
-  display: none;
+  width: 3px;
+  background-color: transparent;
+}
+.popular::-webkit-scrollbar-track,
+.categoryDisplay::-webkit-scrollbar-track {
+  /* -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); */
+  background-color: transparent;
+  padding: 3px;
+}
+.popular::-webkit-scrollbar-thumb,
+.categoryDisplay::-webkit-scrollbar-thumb {
+  background-color: #77777748;
+  border-radius: 10px;
 }
 .popularCard {
   width: 300px;
