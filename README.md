@@ -1,4 +1,4 @@
-# Recipe Search App
+# CookBook - The Ultimate Recipe Finder.
 
 This is a recipe search app built using React JS, allowing users to explore a wide variety of recipes sourced from the Edamam API. The app offers several features to enhance the user experience, including search functionality, the ability to view recipe details such as ingredients and instructions, managing favorite recipes, and toggling between dark and light modes. Additionally, the app includes sections for most popular categories and popular recipes for easy navigation.
 
@@ -13,7 +13,7 @@ This is a recipe search app built using React JS, allowing users to explore a wi
 
 ## Live Demo
 
-Check out the live demo of the app [here](https://recipe-search-app-wine.vercel.app/) (Replace this with the actual link).
+Check out the live demo of the app [here](https://recipe-search-app-wine.vercel.app/)
 
 ## Screenshots
 
