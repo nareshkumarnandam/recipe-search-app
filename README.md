@@ -1,70 +1,55 @@
-# Getting Started with Create React App
+# Recipe Search App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a recipe search app built using React JS, allowing users to explore a wide variety of recipes sourced from the Edamam API. The app offers several features to enhance the user experience, including search functionality, the ability to view recipe details such as ingredients and instructions, managing favorite recipes, and toggling between dark and light modes. Additionally, the app includes sections for most popular categories and popular recipes for easy navigation.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Search Functionality**: Users can search for their desired recipes using keywords.
+- **Recipe Details**: View detailed information including ingredients and cooking instructions for each recipe.
+- **Favorite Recipes**: Users can add or remove recipes to their favorites tab, which is stored locally.
+- **Dark/Light Mode**: Toggle between dark and light modes based on user preference.
+- **Popular Categories**: Explore popular recipe categories such as pizza, pasta, chicken, and desserts.
+- **Popular Recipes**: Access a curated list of the most popular recipes fetched from the Edamam API.
 
-### `npm start`
+## Live Demo
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Check out the live demo of the app [here](https://recipe-search-app-wine.vercel.app/) (Replace this with the actual link).
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Screenshots
 
-### `npm test`
+![Screenshot 1](./src/assets/Screenshot%20(26).png)
+![Screenshot 2](./src/assets/Screenshot%20(27).png)
+![Screenshot 3](./src/assets/Screenshot%20(28).png)
+![Screenshot 4](./src/assets/Screenshot%20(29).png)
+![Screenshot 5](./src/assets/Screenshot%20(30).png)
+![Screenshot 6](./src/assets/Screenshot%20(31).png)
+![Screenshot 7](./src/assets/Screenshot%20(32).png)
+![Screenshot 8](./src/assets/Screenshot%20(33).png)
+![Screenshot 9](./src/assets/Screenshot%20(34).png)
+![Screenshot 10](./src/assets/Screenshot%20(35).png)
+![Screenshot 11](./src/assets/Screenshot%20(36).png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## Getting Started
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+To get started with the app locally, follow these steps:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clone this repository.
+2. Install dependencies using `npm install`.
+3. Run the app using `npm start`.
+4. Access the app at `http://localhost:3000` in your browser.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Technologies Used
 
-### `npm run eject`
+- React JS
+- Edamam API
+- HTML/CSS
+- Local Storage
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Contributing
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Contributions are welcome! Please feel free to open a pull request or submit an issue if you find any bugs or want to suggest improvements.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## License
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
