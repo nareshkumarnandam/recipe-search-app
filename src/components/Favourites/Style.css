@@ -70,6 +70,17 @@
     font-size: 1.2rem;
 }
 
+@media (max-width: 1300px){
+    .favItem img{
+        margin: 0 2rem;
+    }
+    .optionsColumn button{
+        padding: .7rem;
+        font-size: .9rem;
+        width: 60%;
+    }
+}
+
 @media (max-width: 500px){
     .favouritePage{
         position: relative;
@@ -166,3 +177,4 @@
         font-size: 1.2rem;
     }
 }
+

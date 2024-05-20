@@ -118,6 +118,49 @@
 }
 
 
+@media (max-width: 1300px){
+    .rightNav .lightBtn{
+        width: 35%;
+        height: 35px;
+        border-radius: 8px;
+        border: 2px  solid rgb(255, 255, 255);
+        color: rgb(255, 255, 255);
+        outline: 0;
+        background: transparent;
+        cursor: pointer;
+        font-size: .8rem;
+        font-weight: 520;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 0px;
+    }
+    .star{
+        width: 20px;
+        color: red;
+        padding: 0;
+        margin: 2px;
+    }
+    .rightNav .darkBtn{
+        width: 35%;
+        height: 35px;
+        border-radius: 8px;
+        border: 2px  solid rgb(255, 255, 255);
+        color: rgb(255, 255, 255);
+        outline: 0;
+        background: transparent;
+        cursor: pointer;
+        font-size: .8rem;
+        font-weight: 520;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 0px;
+    }
+}
+
 @media (max-width: 500px) {
     .navbar{
         height: 80px;

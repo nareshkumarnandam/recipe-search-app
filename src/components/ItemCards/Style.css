@@ -93,6 +93,24 @@
     border-radius: 10px;
 }
 
+
+@media (max-width: 1300px){
+    .ItemCard h1{
+        font-size: 1.2rem;
+    }
+    .rightDiv{
+        padding: 3rem;
+    }
+    .rightDivDetails{
+        gap: 20px;
+        font-size: .9rem;
+    }
+    .addToFavBtn{
+        padding: .7rem;
+        font-size: .9rem;
+    }
+}
+
 @media (max-width: 500px){
     .ItemCardMain{
         width: 100%;
